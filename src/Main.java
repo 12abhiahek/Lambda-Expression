@@ -1,3 +1,8 @@
+import com.nt.StrngLen.strLength;
+import com.nt.length.LengthSum;
+import com.nt.sum.SumOfTwoNumber;
+
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -43,10 +48,34 @@ public class Main {
         MyInter l=()->{System.out.println("methods calling from lambda expression");
         };
         l.sayHello();
-
-
+        System.out.println();
+        System.out.println("Sum Of Two Number");
+        SumOfTwoNumber s=(int a,int b)->{
+          System.out.println("Sum of nunber are::"+ (a+b));
+        };
+        s.sum(4,4);
+        System.out.println();
+        System.out.println("Sum of 2nd method");
+        SumOfTwoNumber s2=(int a ,int b)->{
+            System.out.println("sum of 2nd method are::"+(a+b));
+        };
+        s2.sum(7,5);
+        System.out.println();
+        System.out.println("sum of 3rd number are::");
+        s2.sum(99,99);
+        System.out.println();
+        LengthSum ls=(x,y)->{
+            System.out.println("length of two nunber are::"+2*(x+y));
+        };
+          //System.out.println("sum of length are::");
+        ls.length(9,9);
+        System.out.println();
+        System.out.println("length of string are::");
+        strLength sl=(str)-> {
+            return str.length();
+        };
+        sl.stringLength("abhishek");
         // pattern print
-
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
 
